@@ -23,38 +23,56 @@
 
 
 </head>
-
-
-
-
-
 <body>
-    <header class="page-header">
-        <div class="container">
-            <a class="logo" href="#"><img src="./image/main/logo.png" alt="logo-ice"></a>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                <svg class="icon-open-burger">
-                    <use href="../image/svg/icons.svg#icon-open-burger"></use>
-                </svg>
-            </button>
-
-            <ul class="menu">
-                <li><a href="./index.html" class="link">Home</a></li>
-                <li><a href="" class="link">How it’s made?</a></li>
-                <li><a href="" class="link">Our products</a></li>
-                <li><a href="" class="link">Contact</a></li>
-            </ul>
-            <div class="decoration-buy-now-tablet "><a href="#" class="button-buy-now">Buy now<svg class="buy-now">
-                        <use href="../image/svg/icons.svg#icon-black-arrow"></use>
-                    </svg></a></div>
-
-        </div>
+    <header>
+        <nav class="page-header">
+            <div class="container">
+                <div class="navbar">
+                    <a class="logo" href="#"><img class="img-logo-mobile" src="./image/main/logo-mobile.png" alt="logo-ice">
+                    <img class="img-logo-desctop" src="./image/main/logo.png" alt="logo-ice"></a>
+                    <button class="hamb tablet-absolute" id="hamb">
+                        <svg class="icon-open-burger">
+                            <use href="../image/svg/icons.svg#icon-open-burger"></use>
+                        </svg>
+                    </button>
+                    <div class="decoration-buy-now-tablet ">
+                        <a href="#" class="button-buy-now">Buy now
+                            <svg class="buy-now">
+                                <use href="../image/svg/icons.svg#icon-black-arrow"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="menu" id="menu">
+                        <a class="logo-mobile" href="#"><img class="img-logo-mobile" src="./image/main/logo-mobile.png" alt="logo-ice">
+                            <img class="img-logo-desctop" src="./image/main/logo.png" alt="logo-ice">
+                        </a>
+                        <button class="hamb" id="hamb">
+                            <svg class="icon-close-burger">
+                                <use href="../image/svg/icons.svg#icon-close-burger"></use>
+                            </svg>
+                        </button>
+                        <ul class="navigation-list">
+                            <li class="navigation-item"><a href="./index.html">Home</a></li>
+                            <li class="navigation-item"><a href="#about">How it’s made?</a></li>
+                            <li class="navigation-item"><a href="#products">Our products</a></li>
+                            <li class="navigation-item"><a href="#contacts">Contact</a></li>
+                        </ul>
+                        <div class="decoration-buy-now ">
+                            <a href="#" class="button-buy-now">Buy now
+                                <svg class="buy-now">
+                                    <use href="../image/svg/icons.svg#icon-black-arrow"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <main>
         <section class="hero">
             <div class="container ">
-
                 <div class="hero-decoration">
                     <div class="main-text">
                         <h1 class="title">ice cream
@@ -67,10 +85,12 @@
                         </div>
                     </div>
                     <div class="tablet-decoration-left">
-                        <img src="./image/main/ice-creams.png" alt="a lot of ice creams on the dish">
+                        <img class="image-sub-hero" src="./image/main/ice-creams.png" alt="a lot of ice creams on the dish">
                         <p class="desctop-decription">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                             eiusmod tempor incididunt ut
-                            labore et</p>
+                            labore et <svg class="svg-white-arrow">
+                                <use href="../image/svg/icons.svg#icon-white-arrow"></use>
+                            </svg></p>
                     </div>
                     <div class="tablet-decoration-right">
                         <p class="business-numbers"><span class="numbers">16</span>cafes</p>
@@ -83,8 +103,17 @@
 
                 </div>
         </section>
-        <section class="produts" id="produts"></section>
-        <section class="about" id="about"></section>
+        <section class="section-produts" id="products">
+            <div class="container">
+
+            </div>
+        </section>
+        <br>
+        <section class="about" id="about">
+            <div class="container">
+
+            </div>
+        </section>
         <section class="advantages" id="advantages"></section>
         <section class="gallery" id="gallery"></section>
         <section class="customer-reviews" id="customer-reviews"></section>
@@ -92,50 +121,12 @@
     </main>
     <footer></footer>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <a class="logo-mobile" href="#"><img src="./image/main/logo.png" alt="logo-ice"></a>
 
-        <button class="menu-toggle js-close-menu">
-            <svg class="icon-close-burger">
-                <use href="../image/svg/icons.svg#icon-close-burger"></use>
-            </svg>
-        </button>
-
-        <ul class="mobile-menu">
-
-            <li><a href="#" class="link mobile-links js-close-menu">Home</a></li>
-            <li><a class="link mobile-links js-close-menu" href="#about">How it’s made?</a></li>
-            <li><a href="" class="link mobile-links js-close-menu">Our products</a></li>
-            <li><a href="./test.html" class="link mobile-links js-close-menu">Contact</a></li>
-        </ul>
-        <div class="decoration-buy-now"><a class="button-buy-now" href="#">Buy now
-
-                <svg class="buy-now">
-                    <use href="../image/svg/icons.svg#icon-black-arrow"></use>
-                </svg>
-
-            </a>
-        </div>
-        >
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="popup" id="popup"></div>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script> -->
-
-
-    <script src="./js/modal.js"></script>
+    <script src="./js/test.js"></script>
 </body>
 
 </html>
